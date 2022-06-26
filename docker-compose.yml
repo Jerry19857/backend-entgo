@@ -1,0 +1,14 @@
+version: "3"
+services:
+  backend-go-map:
+    build: ./
+    ports:
+      - "5003:8080"
+  backend-go-map2:
+    build: ./
+    ports:
+      - "5004:8080"
+  nginx-go:
+    build: ./nginx
+    ports:
+      - "8086:80"
